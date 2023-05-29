@@ -1,9 +1,24 @@
-import React from 'react'
+import React, { useContext, useEffect } from "react";
+import { Col, ListGroup, Row } from "react-bootstrap";
 
-const Sidebar = () => {
+import "./Sidebar.css";
+
+function Sidebar() {
+
+    const rooms = ["first room", "second room", "third room"];
+
+
     return (
-        <div>Sidebar</div>
-    )
+        <>
+            <h2>Available rooms</h2>
+            <ListGroup>
+                {rooms.map((room, idx) => (
+                    <ListGroup.Item key={idx}>{room}</ListGroup.Item>
+                ))}
+            </ListGroup>
+            <h2>Members</h2>
+        </>
+    );
 }
 
-export default Sidebar
+export default Sidebar;
