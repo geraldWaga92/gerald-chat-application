@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
+require('./connection')
 
 
 const rooms = ['general', 'tech', 'finance', 'crypto'];
