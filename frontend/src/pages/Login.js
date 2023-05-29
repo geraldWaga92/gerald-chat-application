@@ -33,7 +33,7 @@ function Login() {
                             <Form.Control type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} value={password} required />
                         </Form.Group>
                         <Button variant="primary" type="submit">
-                            "login"
+                            Login
                         </Button>
                         <div className="py-4">
                             <p className="text-center">
