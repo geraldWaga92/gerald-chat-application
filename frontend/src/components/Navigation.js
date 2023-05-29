@@ -5,7 +5,7 @@ import { LinkContainer } from "react-router-bootstrap";
 import logo from "../assets/logo.png";
 function Navigation() {
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="white" expand="lg">
             <Container>
                 <LinkContainer to="/">
                     <Navbar.Brand>
