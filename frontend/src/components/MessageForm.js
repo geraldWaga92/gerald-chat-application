@@ -1,8 +1,31 @@
 import React from 'react'
+import { Button, Col, Form, Row } from "react-bootstrap";
+import "./MessageForm.css";
 
 const MessageForm = () => {
+
+    function handleSubmit(e) {
+        e.preventDefault();
+    }
+
     return (
-        <div>MessageForm</div>
+        <>
+            <div className="messages-output"></div>
+            <Form onSubmit={handleSubmit}>
+                <Row>
+                    <Col md={11}>
+                        <Form.Group>
+                            <Form.Control type="text" placeholder='your message'></Form.Control>
+                        </Form.Group>
+                    </Col>
+                    <Col md={11}>
+                        <Button variant='primary' type='submit' style={{ width: "100%", backgroundColor: "orange" }}>
+                            <i className='fas fa-paper-plane'></i>
+                        </Button>
+                    </Col>
+                </Row>
+            </Form>
+        </>
     )
 }
 
