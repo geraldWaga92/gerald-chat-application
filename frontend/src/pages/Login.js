@@ -9,13 +9,18 @@ function Login() {
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
 
+    function handleLogin(e) {
+        e.preventDefault();
+        // login logic
+
+    }
 
     return (
         <Container>
             <Row>
                 <Col md={5} className="login__bg"></Col>
                 <Col md={7} className="d-flex align-items-center justify-content-center flex-direction-column">
-                    <Form style={{ width: "80%", maxWidth: 500 }}>
+                    <Form style={{ width: "80%", maxWidth: 500 }} onSubmit={handleLogin}>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
 
                             <Form.Label>Email address</Form.Label>
